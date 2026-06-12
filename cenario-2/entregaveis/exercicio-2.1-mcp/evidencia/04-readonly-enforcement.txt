@@ -1,0 +1,29 @@
+###### EVIDENCIA D — enforcement read-only (SO) nas fontes de negocio ######
+>>> Contexto: o filesystem server expõe write_file p/ TODOS os dirs permitidos.
+>>> Mitigacao: tornar as fontes read-only no nivel do SO (chmod a-w).
+
+--- aplicando read-only ---
+perms docs/novatech:
+dr-xr-xr-x 2 yurialves yurialves 4096 Jun 11 17:24 /home/yurialves/dgs-ai-first/cenario-2/novatech-assistant/docs/novatech
+-r--r--r-- 1 yurialves yurialves 3394 Jun 11 17:24 /home/yurialves/dgs-ai-first/cenario-2/novatech-assistant/docs/novatech/POL-001-politica-devolucao.md
+
+--- tentativa de ESCRITA via MCP (write_file) na fonte read-only ---
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "EACCES: permission denied, open '/home/yurialves/dgs-ai-first/cenario-2/novatech-assistant/docs/novatech/_tentativa_injection.md'"
+      }
+    ],
+    "isError": true
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}
+
+arquivo malicioso foi criado?
+ls: cannot access '/home/yurialves/dgs-ai-first/cenario-2/novatech-assistant/docs/novatech/_tentativa_injection.md': No such file or directory
+
+--- revertendo perms (mantem working tree limpo; chmod é a mitigacao a aplicar no ambiente real) ---
+revertido.

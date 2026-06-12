@@ -1,0 +1,36 @@
+{
+  "_comment": "Configuracao de MCP servers do projeto NovaTech Assistant. Apenas reference servers locais e gratuitos (npx/uvx) — nenhum servico pago ou externo. Caminhos relativos a raiz do repositorio (CWD do cliente MCP). Justificativa de escopo e least privilege no entregavel 02-mcp-config-justificativa.md.",
+  "mcpServers": {
+    "fs-workspace": {
+      "_purpose": "Leitura e ESCRITA do que o time produz: codigo, specs e skills. Unicos caminhos onde um agente deve poder escrever.",
+      "command": "npx",
+      "args": [
+        "-y", "@modelcontextprotocol/server-filesystem",
+        "./src", "./specs", "./skills"
+      ]
+    },
+    "fs-knowledge": {
+      "_purpose": "Fontes de negocio (documentacao NovaTech + corpus de retrieval). Instancia SEPARADA, escopo minimo. Read-only e garantido no nivel do SO (chmod a-w) — o server nao tem flag de read-only por pasta.",
+      "command": "npx",
+      "args": [
+        "-y", "@modelcontextprotocol/server-filesystem",
+        "./docs/novatech", "./data/retrieval-corpus"
+      ]
+    },
+    "git": {
+      "_purpose": "Historico, diff e branches do repositorio local (substitui o GitHub no cenario local). Consumido para contexto, nao para mutacao — ver risco R3.",
+      "command": "uvx",
+      "args": ["mcp-server-git", "--repository", "."]
+    },
+    "memory": {
+      "_purpose": "Grafo persistente de decisoes e linguagem ubiqua do projeto, compartilhado entre sessoes de agentes.",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "everything": {
+      "_purpose": "Server de referencia para explorar/aprender as primitivas de MCP (tools/resources/prompts). Nao aponta para dados do projeto.",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everything"]
+    }
+  }
+}

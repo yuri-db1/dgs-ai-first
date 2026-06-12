@@ -1,0 +1,9 @@
+###### EVIDENCIA B — recuperacao de chunk (pergunta: 'Posso devolver carga perigosa?') ######
+>>> Gabarito Anexo B: chunk que DEVE ser recuperado = POL-001-B
+
+--- chamada read_text_file via MCP retornou o corpus; chunk relevante isolado abaixo ---
+
+CHUNK RECUPERADO VIA MCP (read_text_file -> data/retrieval-corpus/chunks-novatech.md):
+
+**Chunk POL-001-B** — Seção 3.2: Exceções
+> As seguintes categorias de carga NÃO são elegíveis para devolução pelo processo padrão: Cargas perigosas classificadas nas classes 1 a 6 da ANTT (Agência Nacional de Transportes Terrestres), conforme Resolução ANTT nº 5.947/2021. Inclui: explosivos (classe 1), gases (classe 2), líquidos inflamáveis (classe 3), sólidos inflamáveis (classe 4), oxidantes e peróxidos (classe 5), substâncias tóxicas e infectantes (classe 6). Para essas categorias, o cliente deve entrar em contato com o setor de Gestão de Riscos (ramal 4500) para tratamento individual.

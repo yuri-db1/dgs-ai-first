@@ -1,0 +1,62 @@
+###### EVIDENCIA A — fs-knowledge: escopo + list + read doc ######
+{
+  "result": {
+    "protocolVersion": "2024-11-05",
+    "capabilities": {
+      "tools": {
+        "listChanged": true
+      }
+    },
+    "serverInfo": {
+      "name": "secure-filesystem-server",
+      "version": "0.2.0"
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 1
+}
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Allowed directories:\n/home/yurialves/dgs-ai-first/cenario-2/novatech-assistant/docs/novatech\n/home/yurialves/dgs-ai-first/cenario-2/novatech-assistant/data/retrieval-corpus"
+      }
+    ],
+    "structuredContent": {
+      "content": "Allowed directories:\n/home/yurialves/dgs-ai-first/cenario-2/novatech-assistant/docs/novatech\n/home/yurialves/dgs-ai-first/cenario-2/novatech-assistant/data/retrieval-corpus"
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[FILE] FAQ-atendimento.md\n[FILE] POL-001-politica-devolucao.md\n[FILE] PROC-042-frete-especial-v1.md\n[FILE] PROC-042-v2-frete-especial-revisado.md\n[FILE] README.md\n[FILE] SLA-2024-tabela-sla-clientes.md"
+      }
+    ],
+    "structuredContent": {
+      "content": "[FILE] FAQ-atendimento.md\n[FILE] POL-001-politica-devolucao.md\n[FILE] PROC-042-frete-especial-v1.md\n[FILE] PROC-042-v2-frete-especial-revisado.md\n[FILE] README.md\n[FILE] SLA-2024-tabela-sla-clientes.md"
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 3
+}
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "# POL-001 — Política de Devolução de Mercadorias\n\n**Versão:** 3.1\n**Última atualização:** 15/01/2024\n**Responsável:** Diretoria de Operações\n**Classificação:** Documento normativo — uso obrigatório pelo time de atendimento\n\n## 1. Objetivo\n\nEsta política define as regras e procedimentos para devolução de mercadorias transportadas pela NovaTech, aplicável a todos os tipos de cliente e categorias de carga, salvo exceções explicitamente listadas na seção 3.\n\n## 2. Escopo\n\nAplica-se a todas as devoluções solicitadas por clientes da NovaTech após a entrega da mercadoria. Não se aplica a mercadorias ainda em trânsito (para essas, consultar PROC-088: Procedimento de Interceptação de Carga).\n\n## 3. Regras de Devolução\n\n### 3.1. Prazo geral\n\nO cliente pode solicitar a devolução de mercadorias em até 7 (sete) dias úteis após a data de recebimento confirmada no sistema de tracking. A contagem de dias úteis exclui sábados, domingos e feriados nacionais."
+      }
+    ],
+    "structuredContent": {
+      "content": "# POL-001 — Política de Devolução de Mercadorias\n\n**Versão:** 3.1\n**Última atualização:** 15/01/2024\n**Responsável:** Diretoria de Operações\n**Classificação:** Documento normativo — uso obrigatório pelo time de atendimento\n\n## 1. Objetivo\n\nEsta política define as regras e procedimentos para devolução de mercadorias transportadas pela NovaTech, aplicável a todos os tipos de cliente e categorias de carga, salvo exceções explicitamente listadas na seção 3.\n\n## 2. Escopo\n\nAplica-se a todas as devoluções solicitadas por clientes da NovaTech após a entrega da mercadoria. Não se aplica a mercadorias ainda em trânsito (para essas, consultar PROC-088: Procedimento de Interceptação de Carga).\n\n## 3. Regras de Devolução\n\n### 3.1. Prazo geral\n\nO cliente pode solicitar a devolução de mercadorias em até 7 (sete) dias úteis após a data de recebimento confirmada no sistema de tracking. A contagem de dias úteis exclui sábados, domingos e feriados nacionais."
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 4
+}
