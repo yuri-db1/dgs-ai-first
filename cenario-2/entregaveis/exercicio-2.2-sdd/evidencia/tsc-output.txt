@@ -1,0 +1,2 @@
+======== TYPE-CHECK (npx tsc -p . --noEmit) ========
+exit tsc: 0

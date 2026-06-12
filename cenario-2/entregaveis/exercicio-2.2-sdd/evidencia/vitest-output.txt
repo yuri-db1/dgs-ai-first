@@ -1,0 +1,18 @@
+======== TESTES (npx vitest run) ========
+
+ RUN  v2.1.9 /home/yurialves/dgs-ai-first/cenario-2/novatech-assistant
+
+ ✓ tests/unit/validator.test.ts (6 tests) 7ms
+{"level":40,"time":1781262389220,"pid":51979,"hostname":"DB1G1404","invocationId":"test-invocation","msg":"query_invalid_json"}
+{"level":40,"time":1781262389223,"pid":51979,"hostname":"DB1G1404","invocationId":"test-invocation","code":"VALIDATION_ERROR","issues":[{"field":"query","message":"Required"}],"msg":"query_validation_failed"}
+{"level":40,"time":1781262389224,"pid":51979,"hostname":"DB1G1404","invocationId":"test-invocation","code":"VALIDATION_ERROR","issues":[{"field":"query","message":"String must contain at least 3 character(s)"}],"msg":"query_validation_failed"}
+{"level":40,"time":1781262389225,"pid":51979,"hostname":"DB1G1404","invocationId":"test-invocation","code":"VALIDATION_ERROR","issues":[{"field":"history","message":"Array must contain at most 3 element(s)"}],"msg":"query_validation_failed"}
+{"level":30,"time":1781262389225,"pid":51979,"hostname":"DB1G1404","invocationId":"test-invocation","queryLength":26,"historyTurns":0,"msg":"query_received"}
+ ✓ tests/integration/query-handler.test.ts (5 tests) 8ms
+
+ Test Files  2 passed (2)
+      Tests  11 passed (11)
+   Start at  08:06:28
+   Duration  360ms (transform 117ms, setup 0ms, collect 136ms, tests 15ms, environment 0ms, prepare 162ms)
+
+exit vitest: 0

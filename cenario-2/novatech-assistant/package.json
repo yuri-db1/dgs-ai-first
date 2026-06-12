@@ -6,11 +6,17 @@
   "scripts": {
     "test": "vitest run",
     "lint": "eslint .",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "typecheck": "tsc -p . --noEmit"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.5.0",
+    "pino": "^9.3.0",
+    "zod": "^3.23.0"
   },
   "devDependencies": {
+    "@types/node": "^20.14.0",
     "typescript": "^5.5.0",
-    "vitest": "^2.0.0",
-    "zod": "^3.23.0"
+    "vitest": "^2.0.0"
   }
 }
