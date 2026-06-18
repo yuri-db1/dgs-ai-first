@@ -30,11 +30,13 @@ cenario-2/
 
 ## Exercícios do papel Desenvolvedor
 
-| Exercício | Tema | Status |
-|-----------|------|--------|
-| 2.1 | Configuração e uso real de MCP servers | ✅ concluído — [relatório](entregaveis/exercicio-2.1-mcp/RELATORIO-exercicio-2.1.md) |
-| 2.2 | Implementação de spec com SDD | ✅ concluído — [relatório](entregaveis/exercicio-2.2-sdd/RELATORIO-exercicio-2.2.md) |
-| 2.3 | Estratégia de skills do projeto | ✅ concluído — [relatório](entregaveis/exercicio-2.3-skills/RELATORIO-exercicio-2.3.md) |
+| Exercício | Tema | Status | Avaliação |
+|-----------|------|--------|-----------|
+| 2.1 | Configuração e uso real de MCP servers | ✅ concluído — [relatório](entregaveis/exercicio-2.1-mcp/RELATORIO-exercicio-2.1.md) | [3.0](entregaveis/exercicio-2.1-mcp/AVALIACAO-exercicio-2.1.md) |
+| 2.2 | Implementação de spec com SDD | ✅ concluído — [relatório](entregaveis/exercicio-2.2-sdd/RELATORIO-exercicio-2.2.md) | [2.8](entregaveis/exercicio-2.2-sdd/AVALIACAO-exercicio-2.2.md) |
+| 2.3 | Estratégia de skills do projeto | ✅ concluído — [relatório](entregaveis/exercicio-2.3-skills/RELATORIO-exercicio-2.3.md) | [2.8](entregaveis/exercicio-2.3-skills/AVALIACAO-exercicio-2.3.md) |
+
+Avaliação consolidada do papel (média **2.87 — Aprovado com distinção**): [`entregaveis/AVALIACAO-consolidada.md`](entregaveis/AVALIACAO-consolidada.md).
 
 ## Notas de ambiente
 
