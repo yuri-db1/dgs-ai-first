@@ -1,0 +1,10 @@
+{
+  "workMode": "maintenance",
+  "discoveryAnswers": {
+    "systemType": "fullstack",
+    "scope": {
+      "type": "whole_project"
+    },
+    "restrictions": []
+  }
+}

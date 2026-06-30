@@ -1,0 +1,35 @@
+
+ RUN  v2.1.9 /home/yurialves/dgs-ai-first/cenario-3/novatech-assistant
+
+ ✓ tests/unit/validator.test.ts (6 tests) 11ms
+{"level":40,"time":1782816886180,"pid":5838,"hostname":"DB1G1404","invocationId":"test-invocation","msg":"query_invalid_json"}
+{"level":40,"time":1782816886184,"pid":5836,"hostname":"DB1G1404","reason":"SCHEMA_INVALID","detail":"body is not valid JSON","msg":"response_rejected"}
+{"level":40,"time":1782816886186,"pid":5836,"hostname":"DB1G1404","reason":"SCHEMA_INVALID","issues":[{"field":"(root)","message":"Unrecognized key(s) in object: 'hacked'"}],"msg":"response_rejected"}
+{"level":40,"time":1782816886186,"pid":5836,"hostname":"DB1G1404","reason":"MISSING_SOURCE","msg":"response_rejected"}
+{"level":40,"time":1782816886187,"pid":5836,"hostname":"DB1G1404","reason":"MISSING_SOURCE","msg":"response_rejected"}
+{"level":40,"time":1782816886187,"pid":5836,"hostname":"DB1G1404","reason":"MISSING_SOURCE","msg":"response_rejected"}
+{"level":40,"time":1782816886187,"pid":5836,"hostname":"DB1G1404","reason":"MISSING_SOURCE","msg":"response_rejected"}
+{"level":40,"time":1782816886187,"pid":5836,"hostname":"DB1G1404","reason":"MISSING_SOURCE","msg":"response_rejected"}
+{"level":40,"time":1782816886187,"pid":5836,"hostname":"DB1G1404","reason":"MISSING_SOURCE","msg":"response_rejected"}
+{"level":40,"time":1782816886189,"pid":5836,"hostname":"DB1G1404","reason":"DANGEROUS_CARGO_RETURN_NOT_DENIED","affirms":true,"denies":false,"msg":"response_rejected"}
+{"level":40,"time":1782816886189,"pid":5836,"hostname":"DB1G1404","reason":"DANGEROUS_CARGO_RETURN_NOT_DENIED","affirms":false,"denies":false,"msg":"response_rejected"}
+{"level":40,"time":1782816886189,"pid":5836,"hostname":"DB1G1404","reason":"DANGEROUS_CARGO_RETURN_NOT_DENIED","affirms":true,"denies":false,"msg":"response_rejected"}
+{"level":40,"time":1782816886184,"pid":5838,"hostname":"DB1G1404","invocationId":"test-invocation","code":"VALIDATION_ERROR","issues":[{"field":"query","message":"Required"}],"msg":"query_validation_failed"}
+{"level":40,"time":1782816886186,"pid":5838,"hostname":"DB1G1404","invocationId":"test-invocation","code":"VALIDATION_ERROR","issues":[{"field":"query","message":"String must contain at least 3 character(s)"}],"msg":"query_validation_failed"}
+{"level":40,"time":1782816886188,"pid":5838,"hostname":"DB1G1404","invocationId":"test-invocation","code":"VALIDATION_ERROR","issues":[{"field":"history","message":"Array must contain at most 3 element(s)"}],"msg":"query_validation_failed"}
+{"level":30,"time":1782816886188,"pid":5838,"hostname":"DB1G1404","invocationId":"test-invocation","queryLength":26,"historyTurns":0,"msg":"query_received"}
+ ✓ tests/unit/response-validator.test.ts (16 tests) 18ms
+ ✓ tests/integration/query-handler.test.ts (5 tests) 12ms
+{"level":40,"time":1782816886488,"pid":5835,"hostname":"DB1G1404","invocationId":"test-invocation","msg":"feedback_invalid_json"}
+{"level":40,"time":1782816886492,"pid":5835,"hostname":"DB1G1404","invocationId":"test-invocation","code":"VALIDATION_ERROR","issues":[{"field":"rating","message":"Number must be less than or equal to 5"}],"msg":"feedback_validation_failed"}
+{"level":40,"time":1782816886493,"pid":5835,"hostname":"DB1G1404","invocationId":"test-invocation","code":"VALIDATION_ERROR","issues":[{"field":"attendantEmail","message":"Invalid email"}],"msg":"feedback_validation_failed"}
+{"level":40,"time":1782816886493,"pid":5835,"hostname":"DB1G1404","invocationId":"test-invocation","code":"VALIDATION_ERROR","issues":[{"field":"(root)","message":"Unrecognized key(s) in object: 'isAdmin'"}],"msg":"feedback_validation_failed"}
+{"level":30,"time":1782816886494,"pid":5835,"hostname":"DB1G1404","invocationId":"test-invocation","feedbackId":"54aa4570-a026-4d5a-92f8-5f07028af817","rating":5,"msg":"feedback_received"}
+{"level":50,"time":1782816886496,"pid":5835,"hostname":"DB1G1404","invocationId":"test-invocation","feedbackId":"e29551a1-5a67-4f8c-8998-ae5d7cbab419","err":{"type":"Object","message":"cosmos down","stack":"","name":"Error"},"msg":"feedback_persist_failed"}
+ ✓ tests/integration/feedback-handler.test.ts (7 tests) 9ms
+
+ Test Files  4 passed (4)
+      Tests  34 passed (34)
+   Start at  07:54:45
+   Duration  688ms (transform 194ms, setup 0ms, collect 700ms, tests 51ms, environment 1ms, prepare 377ms)
+
